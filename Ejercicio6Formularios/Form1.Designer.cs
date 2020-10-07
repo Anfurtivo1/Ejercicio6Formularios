@@ -45,6 +45,10 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(664, 68);
+            this.label3.Location = new System.Drawing.Point(624, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 2;
@@ -77,7 +81,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(49, 233);
+            this.checkBox1.Location = new System.Drawing.Point(49, 246);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(83, 21);
             this.checkBox1.TabIndex = 3;
@@ -87,7 +91,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(49, 260);
+            this.checkBox2.Location = new System.Drawing.Point(49, 273);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(162, 21);
             this.checkBox2.TabIndex = 4;
@@ -121,7 +125,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(281, 260);
+            this.button3.Location = new System.Drawing.Point(281, 272);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 44);
             this.button3.TabIndex = 8;
@@ -139,27 +143,27 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(452, 271);
+            this.button5.Location = new System.Drawing.Point(464, 273);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(109, 43);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Limpiar";
+            this.button5.Text = "LIMPIAR";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(566, 260);
+            this.button6.Location = new System.Drawing.Point(627, 273);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(137, 44);
+            this.button6.Size = new System.Drawing.Size(133, 44);
             this.button6.TabIndex = 11;
             this.button6.Text = "<<<TRASPASAR";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(566, 329);
+            this.button7.Location = new System.Drawing.Point(627, 337);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(137, 39);
+            this.button7.Size = new System.Drawing.Size(133, 39);
             this.button7.TabIndex = 12;
             this.button7.Text = "AGREGAR";
             this.button7.UseVisualStyleBackColor = true;
@@ -167,19 +171,30 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Snow;
-            this.groupBox1.Location = new System.Drawing.Point(247, 105);
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Location = new System.Drawing.Point(218, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(135, 89);
+            this.groupBox1.Size = new System.Drawing.Size(166, 149);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Tipo de seleccion";
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Manzana",
+            "Platano",
+            "Pera",
+            "Tomate",
+            "Sandia",
+            "Naranja",
+            "Melon"});
             this.checkedListBox1.Location = new System.Drawing.Point(627, 105);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 89);
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 157);
             this.checkedListBox1.TabIndex = 14;
             // 
             // listBox1
@@ -188,7 +203,7 @@
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(437, 110);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 84);
+            this.listBox1.Size = new System.Drawing.Size(120, 148);
             this.listBox1.TabIndex = 15;
             // 
             // listBox2
@@ -197,8 +212,41 @@
             this.listBox2.ItemHeight = 16;
             this.listBox2.Location = new System.Drawing.Point(35, 110);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 84);
+            this.listBox2.Size = new System.Drawing.Size(120, 132);
             this.listBox2.TabIndex = 16;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(18, 32);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(71, 21);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Simple";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(18, 68);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(77, 21);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Multiple";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(18, 107);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(91, 21);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Extendido";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -225,6 +273,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,6 +299,9 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
