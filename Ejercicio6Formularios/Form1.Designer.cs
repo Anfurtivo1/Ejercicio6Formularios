@@ -31,24 +31,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.chBOrdenar = new System.Windows.Forms.CheckBox();
+            this.chBMostrarColumnas = new System.Windows.Forms.CheckBox();
+            this.txaArticulo = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnTrasladarIzq = new System.Windows.Forms.Button();
+            this.btnSeleccionarElemento = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnTrasladarDer = new System.Windows.Forms.Button();
+            this.btnAgregarDer = new System.Windows.Forms.Button();
+            this.gbTipoSeleccion = new System.Windows.Forms.GroupBox();
+            this.chblFrutas = new System.Windows.Forms.CheckedListBox();
+            this.lbArticulosTraspasados = new System.Windows.Forms.ListBox();
+            this.lbArticulos = new System.Windows.Forms.ListBox();
+            this.rbtnSimple = new System.Windows.Forms.RadioButton();
+            this.rbtnMultiple = new System.Windows.Forms.RadioButton();
+            this.rbtnExtendido = new System.Windows.Forms.RadioButton();
+            this.gbTipoSeleccion.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(425, 68);
+            this.label2.Location = new System.Drawing.Point(488, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 17);
             this.label2.TabIndex = 1;
@@ -72,119 +72,127 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(624, 68);
+            this.label3.Location = new System.Drawing.Point(687, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Frutas:";
             // 
-            // checkBox1
+            // chBOrdenar
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(49, 246);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 21);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Ordenar";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chBOrdenar.AutoSize = true;
+            this.chBOrdenar.Location = new System.Drawing.Point(49, 246);
+            this.chBOrdenar.Name = "chBOrdenar";
+            this.chBOrdenar.Size = new System.Drawing.Size(83, 21);
+            this.chBOrdenar.TabIndex = 3;
+            this.chBOrdenar.Text = "Ordenar";
+            this.chBOrdenar.UseVisualStyleBackColor = true;
+            this.chBOrdenar.CheckedChanged += new System.EventHandler(this.chBOrdenar_CheckedChanged);
             // 
-            // checkBox2
+            // chBMostrarColumnas
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(49, 273);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(162, 21);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Mostrar en columnas";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chBMostrarColumnas.AutoSize = true;
+            this.chBMostrarColumnas.Location = new System.Drawing.Point(49, 273);
+            this.chBMostrarColumnas.Name = "chBMostrarColumnas";
+            this.chBMostrarColumnas.Size = new System.Drawing.Size(162, 21);
+            this.chBMostrarColumnas.TabIndex = 4;
+            this.chBMostrarColumnas.Text = "Mostrar en columnas";
+            this.chBMostrarColumnas.UseVisualStyleBackColor = true;
+            this.chBMostrarColumnas.CheckedChanged += new System.EventHandler(this.chBMostrarColumnas_CheckedChanged);
             // 
-            // textBox1
+            // txaArticulo
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 354);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 22);
-            this.textBox1.TabIndex = 5;
+            this.txaArticulo.Location = new System.Drawing.Point(52, 354);
+            this.txaArticulo.Name = "txaArticulo";
+            this.txaArticulo.Size = new System.Drawing.Size(192, 22);
+            this.txaArticulo.TabIndex = 5;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(49, 309);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(49, 309);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // btnBuscar
             // 
-            this.button2.Location = new System.Drawing.Point(169, 309);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(169, 309);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button3
+            // btnTrasladarIzq
             // 
-            this.button3.Location = new System.Drawing.Point(281, 272);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 44);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "TRASPASAR>>>>>";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTrasladarIzq.Location = new System.Drawing.Point(281, 268);
+            this.btnTrasladarIzq.Name = "btnTrasladarIzq";
+            this.btnTrasladarIzq.Size = new System.Drawing.Size(166, 44);
+            this.btnTrasladarIzq.TabIndex = 8;
+            this.btnTrasladarIzq.Text = "TRASPASAR>>>>>";
+            this.btnTrasladarIzq.UseVisualStyleBackColor = true;
+            this.btnTrasladarIzq.Click += new System.EventHandler(this.btnTrasladarIzq_Click);
             // 
-            // button4
+            // btnSeleccionarElemento
             // 
-            this.button4.Location = new System.Drawing.Point(281, 329);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 72);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Seleccionar elemento de la posicion indicada...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSeleccionarElemento.Location = new System.Drawing.Point(281, 325);
+            this.btnSeleccionarElemento.Name = "btnSeleccionarElemento";
+            this.btnSeleccionarElemento.Size = new System.Drawing.Size(166, 72);
+            this.btnSeleccionarElemento.TabIndex = 9;
+            this.btnSeleccionarElemento.Text = "Seleccionar elemento de la posicion indicada...";
+            this.btnSeleccionarElemento.UseVisualStyleBackColor = true;
+            this.btnSeleccionarElemento.Click += new System.EventHandler(this.btnSeleccionarElemento_Click);
             // 
-            // button5
+            // btnLimpiar
             // 
-            this.button5.Location = new System.Drawing.Point(464, 273);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 43);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "LIMPIAR";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(500, 268);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(120, 44);
+            this.btnLimpiar.TabIndex = 10;
+            this.btnLimpiar.Text = "LIMPIAR";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // button6
+            // btnTrasladarDer
             // 
-            this.button6.Location = new System.Drawing.Point(627, 273);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(133, 44);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "<<<TRASPASAR";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTrasladarDer.Location = new System.Drawing.Point(690, 268);
+            this.btnTrasladarDer.Name = "btnTrasladarDer";
+            this.btnTrasladarDer.Size = new System.Drawing.Size(133, 44);
+            this.btnTrasladarDer.TabIndex = 11;
+            this.btnTrasladarDer.Text = "<<<TRASPASAR";
+            this.btnTrasladarDer.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnAgregarDer
             // 
-            this.button7.Location = new System.Drawing.Point(627, 337);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(133, 39);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "AGREGAR";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnAgregarDer.Location = new System.Drawing.Point(690, 325);
+            this.btnAgregarDer.Name = "btnAgregarDer";
+            this.btnAgregarDer.Size = new System.Drawing.Size(133, 39);
+            this.btnAgregarDer.TabIndex = 12;
+            this.btnAgregarDer.Text = "AGREGAR";
+            this.btnAgregarDer.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbTipoSeleccion
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Snow;
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(218, 105);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(166, 149);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tipo de seleccion";
+            this.gbTipoSeleccion.BackColor = System.Drawing.Color.Snow;
+            this.gbTipoSeleccion.Controls.Add(this.rbtnExtendido);
+            this.gbTipoSeleccion.Controls.Add(this.rbtnMultiple);
+            this.gbTipoSeleccion.Controls.Add(this.rbtnSimple);
+            this.gbTipoSeleccion.Location = new System.Drawing.Point(281, 93);
+            this.gbTipoSeleccion.Name = "gbTipoSeleccion";
+            this.gbTipoSeleccion.Size = new System.Drawing.Size(166, 149);
+            this.gbTipoSeleccion.TabIndex = 13;
+            this.gbTipoSeleccion.TabStop = false;
+            this.gbTipoSeleccion.Text = "Tipo de seleccion";
             // 
-            // checkedListBox1
+            // chblFrutas
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.chblFrutas.CheckOnClick = true;
+            this.chblFrutas.FormattingEnabled = true;
+            this.chblFrutas.Items.AddRange(new object[] {
             "Manzana",
             "Platano",
             "Pera",
@@ -192,89 +200,101 @@
             "Sandia",
             "Naranja",
             "Melon"});
-            this.checkedListBox1.Location = new System.Drawing.Point(627, 105);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 157);
-            this.checkedListBox1.TabIndex = 14;
+            this.chblFrutas.Location = new System.Drawing.Point(690, 93);
+            this.chblFrutas.Name = "chblFrutas";
+            this.chblFrutas.Size = new System.Drawing.Size(120, 157);
+            this.chblFrutas.TabIndex = 14;
             // 
-            // listBox1
+            // lbArticulosTraspasados
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(437, 110);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 148);
-            this.listBox1.TabIndex = 15;
+            this.lbArticulosTraspasados.FormattingEnabled = true;
+            this.lbArticulosTraspasados.ItemHeight = 16;
+            this.lbArticulosTraspasados.Location = new System.Drawing.Point(500, 98);
+            this.lbArticulosTraspasados.Name = "lbArticulosTraspasados";
+            this.lbArticulosTraspasados.Size = new System.Drawing.Size(120, 148);
+            this.lbArticulosTraspasados.TabIndex = 15;
             // 
-            // listBox2
+            // lbArticulos
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(35, 110);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 132);
-            this.listBox2.TabIndex = 16;
+            this.lbArticulos.FormattingEnabled = true;
+            this.lbArticulos.ItemHeight = 16;
+            this.lbArticulos.Items.AddRange(new object[] {
+            "Mesa",
+            "Coche",
+            "Libro",
+            "Maceta",
+            "Silla",
+            "Estanteria",
+            "Lampara",
+            "Rotuladores",
+            "Estuches",
+            "Boligrafo"});
+            this.lbArticulos.Location = new System.Drawing.Point(35, 94);
+            this.lbArticulos.Name = "lbArticulos";
+            this.lbArticulos.Size = new System.Drawing.Size(240, 148);
+            this.lbArticulos.TabIndex = 16;
             // 
-            // radioButton1
+            // rbtnSimple
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 32);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 21);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Simple";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnSimple.AutoSize = true;
+            this.rbtnSimple.Location = new System.Drawing.Point(18, 32);
+            this.rbtnSimple.Name = "rbtnSimple";
+            this.rbtnSimple.Size = new System.Drawing.Size(71, 21);
+            this.rbtnSimple.TabIndex = 0;
+            this.rbtnSimple.TabStop = true;
+            this.rbtnSimple.Text = "Simple";
+            this.rbtnSimple.UseVisualStyleBackColor = true;
+            this.rbtnSimple.CheckedChanged += new System.EventHandler(this.rbtnSimple_CheckedChanged);
             // 
-            // radioButton2
+            // rbtnMultiple
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(18, 68);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(77, 21);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Multiple";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnMultiple.AutoSize = true;
+            this.rbtnMultiple.Location = new System.Drawing.Point(18, 68);
+            this.rbtnMultiple.Name = "rbtnMultiple";
+            this.rbtnMultiple.Size = new System.Drawing.Size(77, 21);
+            this.rbtnMultiple.TabIndex = 1;
+            this.rbtnMultiple.TabStop = true;
+            this.rbtnMultiple.Text = "Multiple";
+            this.rbtnMultiple.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbtnExtendido
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 107);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(91, 21);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Extendido";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbtnExtendido.AutoSize = true;
+            this.rbtnExtendido.Location = new System.Drawing.Point(18, 107);
+            this.rbtnExtendido.Name = "rbtnExtendido";
+            this.rbtnExtendido.Size = new System.Drawing.Size(91, 21);
+            this.rbtnExtendido.TabIndex = 2;
+            this.rbtnExtendido.TabStop = true;
+            this.rbtnExtendido.Text = "Extendido";
+            this.rbtnExtendido.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(800, 420);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(854, 420);
+            this.Controls.Add(this.lbArticulos);
+            this.Controls.Add(this.lbArticulosTraspasados);
+            this.Controls.Add(this.chblFrutas);
+            this.Controls.Add(this.gbTipoSeleccion);
+            this.Controls.Add(this.btnAgregarDer);
+            this.Controls.Add(this.btnTrasladarDer);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnSeleccionarElemento);
+            this.Controls.Add(this.btnTrasladarIzq);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txaArticulo);
+            this.Controls.Add(this.chBMostrarColumnas);
+            this.Controls.Add(this.chBOrdenar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbTipoSeleccion.ResumeLayout(false);
+            this.gbTipoSeleccion.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,23 +305,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.CheckBox chBOrdenar;
+        private System.Windows.Forms.CheckBox chBMostrarColumnas;
+        private System.Windows.Forms.TextBox txaArticulo;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnTrasladarIzq;
+        private System.Windows.Forms.Button btnSeleccionarElemento;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnTrasladarDer;
+        private System.Windows.Forms.Button btnAgregarDer;
+        private System.Windows.Forms.GroupBox gbTipoSeleccion;
+        private System.Windows.Forms.CheckedListBox chblFrutas;
+        private System.Windows.Forms.ListBox lbArticulosTraspasados;
+        private System.Windows.Forms.ListBox lbArticulos;
+        private System.Windows.Forms.RadioButton rbtnExtendido;
+        private System.Windows.Forms.RadioButton rbtnMultiple;
+        private System.Windows.Forms.RadioButton rbtnSimple;
     }
 }
 
